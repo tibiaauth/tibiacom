@@ -33,7 +33,7 @@ for await (const details of worldDetails) {
 	players.push(...onlinePlayers);
 }
 
-console.log(`Total of ${players.length} online now.`);
+console.log(`Total of ${players.length} players online now.`);
 const dataPath = `./data`;
 const json = JSON.stringify(players, null, '\t') + '\n';
 await fs.writeFile(`${dataPath}/online_list.json`, json);
