@@ -28,7 +28,7 @@ jobs:
           npm run build
           git config user.name 'Tibia Auth Bot'
           git config user.email 'contact@tibia-auth.com'
-          date=$(date +'%Y-%m-%d-%H-%m')
+          date=$(date +'%Y-%m-%d-%H-%M')
           git add data
           git commit data -m "Add data for date=${date}" || true
           git push
